@@ -16,4 +16,10 @@
 # under the License.
 
 require "mkmf"
+
+have_header("float.h")
+have_header("math.h")
+
+have_func("nanf")
+
 create_makefile("float32")
